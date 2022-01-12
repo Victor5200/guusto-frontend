@@ -1,0 +1,10 @@
+<div class="row col-sm-12">
+  <h1>Merchant List</h1>
+  <div class="card col-sm-3" *ngFor="let item of merchants">
+    <div class="card-body">
+      <h5 class="card-title">{{item.enterpriseName}} - {{item.country.countryName}}</h5>
+      <p class="card-text">{{item.type}}</p>
+      <small>{{item.initialValue | currency}} - {{item.finalValue | currency}}</small>
+    </div>
+  </div>
+</div>
